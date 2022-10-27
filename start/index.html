@@ -17,15 +17,16 @@
     <div id="app">
         <h2>{{ productName }}</h2>
         <div>{{ productDescription }}</div>
+        <div :class="classObjects" :style="styleObject">Hello, Vuel</div>
+
+        <!-- <img :src="productImage" :alt="productImageDescription" :style="productImageStyle"/> -->
+        <img :src="productImage" :alt="productImageDescription" :style="productImageStyle"/>
     </div>
     
     <!-- TODO: Import Vue app -->
     <script src="https://unpkg.com/vue@next"></script>
 
     <script src="./index.js"></script>
-    <script>
-        app.mount('#app');
-    </script>
 
 </body>
 
